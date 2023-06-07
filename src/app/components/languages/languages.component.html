@@ -1,0 +1,10 @@
+  <form #f="ngForm" class="language">
+    <select name="fromText" [ngModel]="selectedFromLanguage" (ngModelChange)="onChangeFrom($event)">
+      <option *ngFor="let country of countries | keyvalue" [value]="country.key">{{country.value}}</option>
+    </select>
+    <i class="fas fa-exchange" (click)="exchangeLanguage()"></i>
+    <select name="toText" [ngModel]="selectedToLanguage" (ngModelChange)="onChangeTo($event)">
+      <option *ngFor="let country of countries | keyvalue" [value]="country.key">{{country.value}}</option>
+    </select>
+  </form>
+

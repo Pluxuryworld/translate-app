@@ -1,0 +1,4 @@
+<div class="container">
+  <textarea class="from-text" [(ngModel)]="textToTranslate" (ngModelChange)="emitTranslateQuery()"  spellcheck="false"  placeholder="Type text to translate"></textarea>
+  <textarea class="to-text" [(ngModel)]="translatedText"  spellcheck="false" readonly disabled placeholder="Translated text"></textarea>
+</div>

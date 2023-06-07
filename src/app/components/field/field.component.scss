@@ -1,0 +1,21 @@
+.container{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid dimgrey ;
+  display: flex;
+}
+.container .to-text{
+  border-radius: 0px;
+  border-left: 1px solid dimgrey;
+}
+
+.container textarea{
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
